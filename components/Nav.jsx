@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   AiOutlineMenu,
   AiOutlineHome,
@@ -11,6 +11,18 @@ import { GiSkills } from "react-icons/gi";
 
 const Nav = () => {
   const [nav, setNav] = useState(false);
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    const changeColor = () => {
+      if (window.scrollY >= 600) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+    window.addEventListener("scroll", changeColor);
+  }, []);
 
   return (
     <div className="absolute z-10 w-full">
@@ -21,7 +33,11 @@ const Nav = () => {
             <a href="#main">
               <AiOutlineHome className="w-16 h-16 border rounded-full bg-white shadow-gray-600 shadow-lg p-2 cursor-pointer" />
             </a>
-            <p className="font-bold text-white text-xl group-hover:translate-x-1 group-hover:opacity-100 opacity-0 -translate-x-2 duration-200 ease-in-out transition-all">
+            <p
+              className={`font-bold ${
+                scroll ? "text-black" : "text-white"
+              } text-xl group-hover:translate-x-1 group-hover:opacity-100 opacity-0 -translate-x-2 duration-200 ease-in-out transition-all`}
+            >
               Home
             </p>
           </div>
@@ -29,7 +45,11 @@ const Nav = () => {
             <a href="#skills">
               <GiSkills className="w-16 h-16 border rounded-full bg-white shadow-gray-600 shadow-lg p-2 cursor-pointer" />
             </a>
-            <p className="font-bold text-white text-xl group-hover:translate-x-1 group-hover:opacity-100 opacity-0 -translate-x-2 duration-200 ease-in-out transition-all">
+            <p
+              className={`font-bold ${
+                scroll ? "text-black" : "text-white"
+              } text-xl group-hover:translate-x-1 group-hover:opacity-100 opacity-0 -translate-x-2 duration-200 ease-in-out transition-all`}
+            >
               Skills
             </p>
           </div>
@@ -37,7 +57,11 @@ const Nav = () => {
             <a href="#projects">
               <AiOutlineProject className="w-16 h-16 border rounded-full bg-white shadow-gray-600 shadow-lg p-2 cursor-pointer" />
             </a>
-            <p className="font-bold text-white text-xl group-hover:translate-x-1 group-hover:opacity-100 opacity-0 -translate-x-2 duration-200 ease-in-out transition-all">
+            <p
+              className={`font-bold ${
+                scroll ? "text-black" : "text-white"
+              } text-xl group-hover:translate-x-1 group-hover:opacity-100 opacity-0 -translate-x-2 duration-200 ease-in-out transition-all`}
+            >
               Projects
             </p>
           </div>
@@ -45,7 +69,11 @@ const Nav = () => {
             <a href="#resume">
               <BsPerson className="w-16 h-16 border rounded-full bg-white shadow-gray-600 shadow-lg p-2 cursor-pointer" />
             </a>
-            <p className="font-bold text-white text-xl group-hover:translate-x-1 group-hover:opacity-100 opacity-0 -translate-x-2 duration-200 ease-in-out transition-all">
+            <p
+              className={`font-bold ${
+                scroll ? "text-black" : "text-white"
+              } text-xl group-hover:translate-x-1 group-hover:opacity-100 opacity-0 -translate-x-2 duration-200 ease-in-out transition-all`}
+            >
               Resume
             </p>
           </div>
@@ -53,7 +81,11 @@ const Nav = () => {
             <a href="#contact">
               <AiOutlineMail className="w-16 h-16 border rounded-full bg-white shadow-gray-600 shadow-lg p-2 cursor-pointer" />
             </a>
-            <p className="font-bold text-white text-xl group-hover:translate-x-1 group-hover:opacity-100 opacity-0 -translate-x-2 duration-200 ease-in-out transition-all">
+            <p
+              className={`font-bold ${
+                scroll ? "text-black" : "text-white"
+              } text-xl group-hover:translate-x-1 group-hover:opacity-100 opacity-0 -translate-x-2 duration-200 ease-in-out transition-all`}
+            >
               Contact Me
             </p>
           </div>
