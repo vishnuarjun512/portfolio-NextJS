@@ -110,19 +110,19 @@ const Nav = () => {
         }`}
       >
         <ul className="flex flex-col justify-center gap-4 bg-border text-white">
-          <li className="p-3 pr-5 text-2xl font-bold hover:scale-110 duration-200 ease-in-out transition-all cursor-pointer border rounded-lg">
+          <li className="p-3 pr-5 text-2xl font-bold hover:scale-110 duration-200 ease-in-out transition-all cursor-pointer border rounded-lg hover:text-black hover:bg-white">
             <a href="#main" className="flex items-center justify-start gap-2">
               <AiOutlineHome />
               <p>Home</p>
             </a>
           </li>
-          <li className="p-3 pr-5 text-2xl font-bold hover:scale-110 duration-200 ease-in-out transition-all cursor-pointer border rounded-lg">
+          <li className="p-3 pr-5 text-2xl font-bold hover:scale-110 duration-200 ease-in-out transition-all cursor-pointer border rounded-lg hover:text-black hover:bg-white">
             <a href="#skills" className="flex items-center justify-start gap-2">
               <GiSkills />
               <p>Skills</p>
             </a>
           </li>
-          <li className="p-3 pr-5 text-2xl font-bold hover:scale-110 duration-200 ease-in-out transition-all cursor-pointer border rounded-lg">
+          <li className="p-3 pr-5 text-2xl font-bold hover:scale-110 duration-200 ease-in-out transition-all cursor-pointer border rounded-lg hover:text-black hover:bg-white">
             <a
               href="#projects"
               className="flex items-center justify-start gap-2"
@@ -131,13 +131,13 @@ const Nav = () => {
               <p>Projects</p>
             </a>
           </li>
-          <li className="p-3 pr-5 text-2xl font-bold hover:scale-110 duration-200 ease-in-out transition-all cursor-pointer border rounded-lg">
+          <li className="p-3 pr-5 text-2xl font-bold hover:scale-110 duration-200 ease-in-out transition-all cursor-pointer border rounded-lg hover:text-black hover:bg-white">
             <a href="#resume" className="flex items-center justify-start gap-2">
               <BsPerson />
               <p>Resume</p>
             </a>
           </li>
-          <li className="p-3 pr-5 text-2xl font-bold hover:scale-110 duration-200 ease-in-out transition-all cursor-pointer border rounded-lg">
+          <li className="p-3 pr-5 text-2xl font-bold hover:scale-110 duration-200 ease-in-out transition-all cursor-pointer border rounded-lg hover:text-black hover:bg-white">
             <a
               href="#contact"
               className="flex items-center justify-start gap-2"
