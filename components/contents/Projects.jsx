@@ -44,14 +44,14 @@ const projects = [
 // Your project data...
 
 const uniqueCategories = [
-  "All Projects",
+  "All",
   ...new Set(projects.map((project, index) => project.category)),
 ];
 
 const Projects = () => {
   const [category, setCategory] = useState(uniqueCategories[0]);
   const setProjects = () => {
-    if (category === "All Projects") {
+    if (category === "All") {
       setDisplayingProjects(projects);
       return;
     }
@@ -71,16 +71,16 @@ const Projects = () => {
       className="min-h-screen bg-green-200 w-full flex flex-col items-center justify-center"
     >
       <h1 className="text-4xl font-bold text-center my-4">My Projects</h1>
-      <div className="bg-blue-300 flex flex-row md:flex-col gap-5 p-3 min-w-[90%] md:w-[80%]">
-        <div className="flex md:flex-row flex-col justify-around items-center gap-2">
+      <div className="bg-blue-300 flex flex-row md:flex-col gap-5 p-3 min-w-[9-%] md:w-[85%]">
+        <div className="flex md:flex-row flex-col justify-around items-start md:items-center gap-2">
           {uniqueCategories.map((c, index) => {
             return (
               <h1
                 className={`${
                   category == uniqueCategories[index]
-                    ? "bg-blue-700 text-white scale-105"
+                    ? "bg-purple-500 border-[2px] border-white text-white"
                     : " "
-                } p-4 px-5 hover:bg-green-200 font-semibold transition-all duration-200 ease-in-out bg-green-50 rounded-lg`}
+                } w-full md:w-fit md:px-20 text-center p-2 py-4 whitespace-nowrap  hover:bg-green-200 font-semibold transition-all duration-200 ease-in-out bg-green-50 rounded-lg`}
                 key={index}
                 onClick={() => {
                   setCategory(uniqueCategories[index]);
@@ -91,7 +91,7 @@ const Projects = () => {
             );
           })}
         </div>
-        <div className="bg-blue-400 grid md:grid-cols-2 sm:pl-[50px] md:pl-[100px] content-center gap-5 md:gap-12 w-full p-8">
+        <div className="bg-blue-400 grid md:grid-cols-2 place-items-center gap-5 p-4 max-h-[480px] md:max-h-[820px] min-h-[480px] overflow-auto">
           {displayingProjects?.map((p, index) => {
             return (
               <ProjectItem
