@@ -71,8 +71,8 @@ const Projects = () => {
       className="min-h-screen bg-green-200 w-full flex flex-col items-center justify-center"
     >
       <h1 className="text-4xl font-bold text-center my-4">My Projects</h1>
-      <div className="bg-blue-300 flex flex-row md:flex-col gap-5 p-3 min-w-[9-%] md:w-[85%]">
-        <div className="flex md:flex-row flex-col justify-around items-start md:items-center gap-2">
+      <div className="bg-blue-300 flex flex-col gap-5 p-3 max-w-[90%] md:max-w-[85%]">
+        <div className="flex flex-row md:flex-row justify-around items-center md:items-center gap-2">
           {uniqueCategories.map((c, index) => {
             return (
               <h1
@@ -80,7 +80,7 @@ const Projects = () => {
                   category == uniqueCategories[index]
                     ? "bg-purple-500 border-[2px] border-white text-white"
                     : " "
-                } w-full md:w-fit md:px-20 text-center p-2 py-4 whitespace-nowrap  hover:bg-green-200 font-semibold transition-all duration-200 ease-in-out bg-green-50 rounded-lg`}
+                } w-full md:w-fit md:px-20 p-2 py-3 md:py-4 text-[12px] lg:text-2xl md:text-xl sm:text-base text-center whitespace-nowrap hover:bg-green-200 font-semibold transition-all duration-200 ease-in-out bg-green-50 rounded-lg`}
                 key={index}
                 onClick={() => {
                   setCategory(uniqueCategories[index]);
@@ -91,7 +91,7 @@ const Projects = () => {
             );
           })}
         </div>
-        <div className="bg-blue-400 grid md:grid-cols-2 place-items-center gap-5 p-4 max-h-[480px] md:max-h-[820px] min-h-[480px] overflow-auto">
+        <div className="bg-blue-400 grid md:grid-cols-2 place-items-center content-start gap-5 p-4 max-h-[480px] md:max-h-[820px] min-h-[480px] overflow-auto">
           {displayingProjects?.map((p, index) => {
             return (
               <ProjectItem
