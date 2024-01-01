@@ -5,13 +5,19 @@ import { MdOutlineWeb } from "react-icons/md";
 
 const ProjectItem = ({ image, name, tech, hosted, link }) => {
   return (
-    <div className="min-h-[200px] md:min-h-[350px] md:max-h-[500px] max-w-[100%] relative flex items-center justify-center group h-full w-full shadow-gray-400 rounded-xl hover:bg-gradient-to-b hover:scale-105 from-gray-700 to-[#14131a] ease-in-out duration-700">
+    <div
+      className={` min-h-[200px] cursor-auto md:min-h-[350px] md:max-h-[500px] max-w-[100%] relative flex items-center justify-center group h-full w-full shadow-gray-400 rounded-xl hover:bg-gradient-to-b hover:scale-105 from-gray-700 to-[#14131a] ease-in-out duration-700`}
+    >
       <Image
         className="w-full h-full rounded-xl group-hover:opacity-[0.1] object-cover transition-all duration-700 "
         src={image}
         alt="/"
+        width={100}
+        height={100}
+        sizes="100vw"
+        priority
       />
-      <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] hover:scale-105 transition-all duration-300 text-white z-10">
+      <div className="hidden p-3 select-none group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] hover:scale-105 transition-all duration-300 text-white z-10">
         <div className="flex flex-col items-center gap-2">
           <p className="text-[20px] sm:text-[40px] whitespace-nowrap font-bold text-center">
             {name}

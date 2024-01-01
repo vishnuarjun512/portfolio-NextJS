@@ -14,9 +14,12 @@ module.exports = {
       },
       colors: {
         custom: {
+          dark: "#14131a",
+          darkText: "white",
           primary: "green",
           secondary: "blue",
         },
+        main: "red",
       },
     },
   },

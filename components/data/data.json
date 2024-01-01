@@ -1,0 +1,108 @@
+{
+    "projectData": [
+        {
+            "name": "Rozilla RealEstate",
+            "link": "https://github.com/vishnuarjun512/mern-RealEstate",
+            "tech": ["MERN Stack", "TailwindCSS", "Redux", "Firebase"],
+            "image": "/rozilla.png",
+            "hosted": {
+                "yes": true,
+                "link": "https://rozilla-realestate.onrender.com/"
+            },
+            "category": "FullStack"
+        },
+        {
+            "name": "Image Gallery",
+            "link": "https://github.com/vishnuarjun512/unsplash-image-gallery-ReactJS",
+            "tech": ["ReactJS", "TailwindCSS", "Unsplash API"],
+            "image": "/imageGallery.png",
+            "hosted": {
+                "yes": false,
+                "link": ""
+            },
+            "category": "Frontend"
+        },
+        {
+            "name": "Todo Web API",
+            "tech": ["ExpressJS", "Postman", "Swagger"],
+            "link": "https://github.com/vishnuarjun512/Task-Manager-API",
+            "image": "/todo.png",
+            "hosted": {
+                "yes": true,
+                "link": "https://documenter.getpostman.com/view/30059269/2s9YeD9DRt"
+            },
+            "category": "Backend"
+        },
+        {
+            "name": "MTVx Movies",
+            "link": "https://github.com/vishnuarjun512/Movie-Website/tree/dev",
+            "tech": ["ReactJS", "TailwindCSS", "MovieListAPI"],
+            "image": "/mtvx.png",
+            "hosted": {
+                "yes": false,
+                "link": ""
+            },
+            "category": "Frontend"
+        },
+        {
+            "name": "Plantii Ecommerce",
+            "link": "https://github.com/vishnuarjun512/Plant_Ecommerce",
+            "tech": ["ReactJS", "SASS"],
+            "image": "/planti.png",
+            "hosted": {
+                "yes": false,
+                "link": ""
+            },
+            "category": "Frontend"
+        },
+        {
+            "name": "Data Analytics",
+            "link": "https://github.com/vishnuarjun512/Data-Finance-React",
+            "tech": ["ReactJS", "Tailwind"],
+            "image": "/dataAnalytics.png",
+            "hosted": {
+                "yes": false,
+                "link": ""
+            },
+            "category": "Frontend"
+        },
+        {
+            "name": "Portfolio",
+            "link": "https://github.com/vishnuarjun512/portfolio",
+            "tech": ["ReactJS", "TailwindCSS"],
+            "image": "/portfolio.png",
+            "hosted": {
+                "yes": true,
+                "link": "https://vishnuarjun512.github.io/portfolio/"
+            },
+            "category": "Frontend"
+        },
+        {
+            "name": "Simple Calculator",
+            "link": "https://github.com/vishnuarjun512/Calculator",
+            "tech": ["Javascript"],
+            "image": "/calculator.png",
+            "hosted": {
+                "yes": true,
+                "link": "https://vishnuarjun512.github.io/Calculator/"
+            },
+            "category": "Frontend"
+        },
+        {
+            "name": "Portfolio NextJS",
+            "tech": ["NextJS"],
+            "link": "https://github.com/vishnuarjun512/portfolio-NextJS",
+            "hosted": "",
+            "image": "/portfolio2.png",
+            "category": "NextJS"
+        },
+        {
+            "name": "Notes API",
+            "tech": ["ExpressJS","NodeJS","Jest","Supertest","Swagger"],
+            "link": "https://github.com/vishnuarjun512/backend-notes-api",
+            "hosted": "",
+            "image": "/notes.png",
+            "category": "Backend" 
+        }
+    ]
+}
