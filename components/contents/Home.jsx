@@ -9,6 +9,20 @@ import {
   FaTwitterSquare,
 } from "react-icons/fa";
 const Home = () => {
+  function openPdfWindow(pdfUrl) {
+    const newWindow = window.open("", "_blank");
+    newWindow.document.write(`
+      <html>
+        <head>
+          <title>PDF Viewer</title>
+        </head>
+        <body style="margin: 0;">
+          <iframe src="${pdfUrl}" style="width: 100%; height: 100vh; border: none;"></iframe>
+        </body>
+      </html>
+    `);
+  }
+
   return (
     <div
       id="main"
@@ -44,6 +58,19 @@ const Home = () => {
           <FaLinkedin className=" md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
           <FaFacebook className=" md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
           <FaTwitterSquare className=" md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
+        </div>
+        <div
+          className={`"shadow-gray-500 bg-gray-200 flex flex-col justify-center items-center text-black absolute right-2 bottom-2 z-1 rounded-full md:rounded-2xl shadow-sm sm:mx-2 mr-[-4px] sm:my-1 my-1 p-1 md:py-2  cursor-pointer group hover:scale-[1.2] ease-in duration-100 `}
+        >
+          {/* <div className="text-white group-hover:-translate-y-14 flex flex-col justify-center items-center group-hover:opacity-100 opacity-0 absolute transition-all duration-500 ease-in-out">
+            <button className="bg-gray-700 px-3 py-2 rounded-lg">View</button>
+          </div> */}
+          <button
+            onClick={() => openPdfWindow("/VISHNU.pdf")}
+            className="sm:text-[13px] text-[9px]  font-bold  sm:h-[30px] h-[15px] sm:w-[100px] w-[60px] flex items-center justify-center"
+          >
+            My Resume
+          </button>
         </div>
       </div>
     </div>

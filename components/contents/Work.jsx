@@ -8,7 +8,7 @@ const Work = () => {
       title: "Freelancing Web Developer",
       company: "Self-Independent",
       duration: "Present",
-      details: "Willing to build Websites for experience",
+      details: "Willing to build MERN Stack Web Apps",
     },
     // {
     //   year: 2023,
