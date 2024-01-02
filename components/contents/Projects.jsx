@@ -30,9 +30,9 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="min-h-screen bg-green-200 w-full flex flex-col items-center justify-start py-5"
+      className="min-h-full bg-green-200 w-full flex flex-col items-center justify-start py-10"
     >
-      <h1 className="text-4xl font-bold text-center my-5 mb-10">My Projects</h1>
+      <h1 className="text-4xl font-bold text-center my-5 ">My Projects</h1>
       <div className="bg-blue-300 flex flex-col gap-5 p-3 max-w-[90%] md:max-w-[85%]">
         <div className="grid grid-flow-col place-content-between sm:place-content-around gap-1 md:gap-1 lg:gap-3">
           {uniqueCategories.map((c, index) => {
@@ -53,7 +53,7 @@ const Projects = () => {
             );
           })}
         </div>
-        <div className="bg-blue-400 rounded-lg p-5 max-h-[480px] md:max-h-[680px] min-h-[220px] md:min-h-[410px] overflow-auto">
+        <div className="bg-blue-400 rounded-lg p-5 max-h-[480px] md:max-h-[680px] min-h-[220px] md:min-h-[410px] overflow-auto transition-all duration-200 ease-in-out">
           <div
             className={`bg-blue-400 rounded-lg w-full h-full  grid md:grid-cols-2 place-items-center content-start gap-5 overflow-auto transition-all ease-in-out `}
           >

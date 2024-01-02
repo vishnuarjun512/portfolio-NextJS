@@ -28,7 +28,7 @@ const Home = () => {
       id="main"
       className="min-h-screen flex items-center justify-center bg-custom bg-center bg-cover bg-no-repeat object-cover w-full"
     >
-      <div className="w-[100vw] h-full absolute top-0 left-0 right-0 bottom-0 bg-black/30 z-[1]" />
+      <div className="w-[100vw] h-[100%] absolute top-0 left-0 right-0 bottom-0 bg-black/30 z-[1]" />
       <div className="flex flex-col justify-center items-center z-[2] text-white">
         <h1 className="text-4xl md:text-6xl font-bold p-4">I'm Vishnu V V</h1>
         <h2 className="flex font-semibold md:text-3xl text-2xl p-4">
@@ -53,25 +53,55 @@ const Home = () => {
           />
         </h2>
         <div className="flex gap-3 items-center p-4 hover:scale-105 duration-200 ease-in-out transition-all">
-          <FaInstagram className="md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
-          <FaGithub className=" md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
-          <FaLinkedin className=" md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
-          <FaFacebook className=" md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
-          <FaTwitterSquare className=" md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
-        </div>
-        <div
-          className={`"shadow-gray-500 bg-gray-200 flex flex-col justify-center items-center text-black absolute right-2 bottom-2 z-1 rounded-full md:rounded-2xl shadow-sm sm:mx-2 mr-[-4px] sm:my-1 my-1 p-1 md:py-2  cursor-pointer group hover:scale-[1.2] ease-in duration-100 `}
-        >
-          {/* <div className="text-white group-hover:-translate-y-14 flex flex-col justify-center items-center group-hover:opacity-100 opacity-0 absolute transition-all duration-500 ease-in-out">
-            <button className="bg-gray-700 px-3 py-2 rounded-lg">View</button>
-          </div> */}
-          <button
-            onClick={() => openPdfWindow("/VISHNU.pdf")}
-            className="sm:text-[13px] text-[9px]  font-bold  sm:h-[30px] h-[15px] sm:w-[100px] w-[60px] flex items-center justify-center"
+          <a
+            href="https://www.instagram.com/vishnu_arjun_/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            My Resume
-          </button>
+            <FaInstagram className="md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
+          </a>
+          <a
+            href="https://github.com/vishnuarjun512"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className=" md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/vishnuarjun512/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className=" md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100010680883981"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaFacebook className=" md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
+          </a>
+          <a
+            href="https://twitter.com/VishnuArjun12"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitterSquare className=" md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
+          </a>
         </div>
+      </div>
+      <div
+        className={`shadow-gray-500 bg-gray-200 hover:bg-gray-100 flex flex-col justify-center items-center text-black absolute right-2 bottom-2 z-20 rounded-full md:rounded-2xl shadow-sm sm:mx-2 mr-[-4px] sm:my-1 my-1 p-1 md:py-2 cursor-pointer group hover:scale-[1.2] ease-in duration-100 `}
+      >
+        {/* <div className="text-white group-hover:-translate-y-14 flex flex-col justify-center items-center group-hover:opacity-100 opacity-0 absolute transition-all duration-500 ease-in-out">
+          <button className="bg-gray-700 px-3 py-2 rounded-lg">View</button>
+        </div> */}
+        <button
+          onClick={() => openPdfWindow("/VISHNU.pdf")}
+          className="sm:text-[13px] text-[9px]  font-bold  sm:h-[30px] h-[15px] sm:w-[100px] w-[60px] flex items-center justify-center"
+        >
+          My Resume
+        </button>
       </div>
     </div>
   );

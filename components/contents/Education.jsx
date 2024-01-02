@@ -23,7 +23,7 @@ const Education = () => {
     },
   ];
   return (
-    <div className="p-5 flex flex-col justify-center items-center">
+    <div className="px-5 flex flex-col justify-center items-center">
       <h1 className={`text-[#001b5e] text-4xl font-bold text-center `}>
         Education
       </h1>

@@ -6,6 +6,7 @@ import {
   AiOutlineMail,
   AiOutlineProject,
 } from "react-icons/ai";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 import { BsMailbox, BsPerson } from "react-icons/bs";
 import { GiSkills } from "react-icons/gi";
 
@@ -99,8 +100,21 @@ const Nav = () => {
         }}
         className="md:hidden fixed top-4 right-4 z-20"
       >
-        <AiOutlineMenu className="w-7 h-7 hover:scale-110 duration-200 ease-in-out transition-all" />
+        {!nav ? (
+          <AiOutlineMenu
+            className={`w-7 h-7 hover:scale-110 ${
+              nav ? "opacity-0" : "opacity-1"
+            } duration-1000 ease-in-out transition-opacity`}
+          />
+        ) : (
+          <IoMdCloseCircleOutline
+            className={`w-7 h-7 hover:scale-110 ${
+              nav ? "opacity-1" : "opacity-0"
+            } duration-1000 ease-in-out transition-opacity`}
+          />
+        )}
       </div>
+
       {/* Sliding Menu */}
       <div
         className={`md:hidden fixed top-0 bg-black flex justify-center items-center h-screen w-[70%] transform ${

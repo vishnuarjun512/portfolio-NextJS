@@ -83,23 +83,23 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className={`bg-purple-300 min-h-[75vh] m-auto py-10 px-[65px] md:px-[80px] flex flex-col justify-center items-center`}
+      className={`bg-[#DF826C] min-h-[75vh] m-auto py-10 px-[65px] md:px-[80px] flex flex-col justify-center items-center`}
     >
       <h1 className={`text-[#001b5e] text-4xl font-bold text-center`}>
         Skills
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center content-center gap-8 m-5 px-10">
         <div
-          className={`bg-[rgb(97,103,122)] md:row-span-2 border-1 min-h-[420px] min-w-[350px] p-2 items-center justify-evenly flex flex-col rounded-3xl shadow-2xl ease-in-out duration-100`}
+          className={`bg-[#4D4C7D] md:row-span-2 border-1 min-h-[400px] min-w-[350px] p-2 items-center justify-evenly flex flex-col rounded-3xl shadow-2xl ease-in-out duration-100`}
         >
-          <h1 className="text-[#D8D9DA] sm:text-2xl text-2xl font-semibold underline">
+          <h1 className="text-[#D8D9DA] sm:text-2xl p-2 text-2xl font-semibold underline">
             {frontend.title.toUpperCase()}
           </h1>
-          <div className="grid grid-cols-3 place-content-center content-around sm:gap-2 gap-2 mt-[8px] mb-[2px]">
+          <div className="grid grid-cols-3 place-content-center content-around sm:gap-2 gap-2">
             {frontend.items.map((item, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center m-3 gap-1 ease-in-out duration-100"
+                className="flex flex-col items-center justify-center p-2 ease-in-out duration-100"
               >
                 <div className="relative group/item">
                   <Image
