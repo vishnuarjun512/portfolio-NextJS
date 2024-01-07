@@ -42,7 +42,7 @@ const Projects = () => {
                   category == uniqueCategories[index]
                     ? "bg-purple-600 hover:bg-purple-500 border-[2px] border-white text-white"
                     : "hover:bg-green-200"
-                } w-full px-[10px] md:px-[2rem] lg:px-[2rem] xl:px-[4rem] 3xl:px-[5rem] p-2 py-3 md:py-5 text-[12px] sm:text-xl lg:text-3xl md:text-2xl text-center whitespace-nowrap font-semibold transition-all duration-200 ease-in-out bg-green-50 rounded-lg`}
+                } w-full px-[10px] md:px-[2rem] lg:px-[2rem] xl:px-[60px] 2xl:px-[70px] p-2 py-3 md:py-5 text-[12px] sm:text-xl lg:text-3xl md:text-2xl text-center whitespace-nowrap font-semibold transition-all duration-200 ease-in-out bg-green-50 rounded-lg`}
                 key={index}
                 onClick={() => {
                   setCategory(uniqueCategories[index]);
