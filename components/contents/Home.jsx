@@ -26,9 +26,9 @@ const Home = () => {
   return (
     <div
       id="main"
-      className="min-h-screen flex items-center justify-center bg-custom bg-center bg-cover bg-no-repeat object-cover w-full"
+      className="h-screen flex items-center justify-center bg-custom bg-center bg-cover bg-no-repeat object-cover w-full"
     >
-      <div className="w-[100vw] h-[100%] absolute top-0 left-0 right-0 bottom-0 bg-black/30 z-[1]" />
+      <div className="w-[100vw] h-screen absolute top-0 left-0 right-0 bottom-0 bg-black/30 z-[1]" />
       <div className="flex flex-col justify-center items-center z-[2] text-white">
         <h1 className="text-4xl md:text-6xl font-bold p-4">I'm Vishnu V V</h1>
         <h2 className="flex font-semibold md:text-3xl text-2xl p-4">

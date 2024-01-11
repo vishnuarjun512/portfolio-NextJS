@@ -1,6 +1,5 @@
 import { Raleway } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";
 
 const montserrat = Raleway({ subsets: ["latin"], weight: ["400", "700"] });
 
