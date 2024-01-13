@@ -6,8 +6,8 @@ import {
   AiOutlineMail,
   AiOutlineProject,
 } from "react-icons/ai";
-import { IoMdCloseCircleOutline } from "react-icons/io";
-import { BsMailbox, BsPerson } from "react-icons/bs";
+
+import { BsPerson } from "react-icons/bs";
 import { GiSkills } from "react-icons/gi";
 
 const Nav = () => {
