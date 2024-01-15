@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import html from "@/public/Icons/html5.png";
+import Html from "@/public/Icons/html.png";
 import css from "@/public/Icons/css.png";
 import sass from "@/public/Icons/sass.png";
 import js from "@/public/Icons/js.png";
@@ -13,7 +13,7 @@ import node from "@/public/Icons/node.png";
 import sql from "@/public/Icons/sql.png";
 import mongodb from "@/public/Icons/mongodb.png";
 import C from "@/public/Icons/C.png";
-import Cpp from "@/public/Icons/c++.png";
+import Cpp from "@/public/Icons/cpp.png";
 import Python from "@/public/Icons/python.png";
 import git from "@/public/Icons/git.png";
 import github from "@/public/Icons/github.png";
@@ -23,7 +23,7 @@ const Skills = () => {
   const frontend = {
     title: "Frontend",
     items: [
-      { name: "HTML", source: html, level: 4 },
+      { name: "HTML", source: Html, level: 4 },
       { name: "CSS", source: css, level: 4 },
       { name: "JavaScript", source: js, level: 3 },
       { name: "React", source: react, level: 2 },
