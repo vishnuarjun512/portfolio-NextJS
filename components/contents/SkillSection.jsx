@@ -34,7 +34,7 @@ const SkillSection = ({ title, items }) => {
           >
             <div className="relative group/item">
               <Image
-                className="w-[65px] rounded-lg h-[68px] translate-y-3 group-hover/item:translate-y-0 transition-all ease-in-out duration-300"
+                className="w-[65px] rounded-lg h-[68px]  translate-y-3 group-hover/item:translate-y-0 transition-all ease-in-out duration-300"
                 src={item.source}
                 alt={item.name}
               />
