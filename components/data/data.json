@@ -12,6 +12,17 @@
             "category": "FullStack"
         },
         {
+            "name": "Ecommerce - Admin",
+            "link": "https://github.com/vishnuarjun512/Ecommerce-NextJS-Admin",
+            "tech": ["NextJS", "Stripe", "Zod", "Cloudinary","ShadCN"],
+            "image": "/ecommerce-admin.png",
+            "hosted": {
+                "yes": true,
+                "link": "https://ecommercenextjsadmin.onrender.com"
+            },
+            "category": "FullStack"
+        },
+        {
             "name": "Image Gallery",
             "link": "https://github.com/vishnuarjun512/unsplash-image-gallery-ReactJS",
             "tech": ["ReactJS", "TailwindCSS", "Unsplash API"],
@@ -94,6 +105,17 @@
             "link": "https://github.com/vishnuarjun512/portfolio-NextJS",
             "hosted": "",
             "image": "/portfolio2.png",
+            "category": "NextJS"
+        },
+        {
+            "name": "Ecommerce - Client",
+            "link": "https://github.com/vishnuarjun512/Ecommerce-NextJS-Client",
+            "tech": ["NextJS", "TailwindCSS", "MongoDB", "Zustand"],
+            "image": "/ecommerce-client.png",
+            "hosted": {
+                "yes": true,
+                "link": "https://ecommerce-client-d6z2.onrender.com"
+            },
             "category": "NextJS"
         },
         {
