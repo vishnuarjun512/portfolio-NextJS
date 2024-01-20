@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineWeb } from "react-icons/md";
+import Link from "next/link";
 
 const ProjectItem = ({ image, name, tech, hosted, link }) => {
   return (
@@ -50,6 +51,14 @@ const ProjectItem = ({ image, name, tech, hosted, link }) => {
               <p>Code</p>
             </a>
           </div>
+          {/* <Link
+            href={`/projects/${name}`}
+            target="_blank"
+            className="flex gap-1 md:gap-2 hover:scale-110 duration-200 transition-all ease-in-out items-center justify-between bg-black hover:bg-white cursor-pointer hover:text-black font-semibold text-white p-2 md:px-5 rounded-lg"
+          >
+            <FaGithub className="w-8 h-8" />
+            <p>Demo</p>
+          </Link> */}
         </div>
       </div>
     </div>
