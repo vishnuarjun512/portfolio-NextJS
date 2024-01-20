@@ -1,17 +1,18 @@
 import React from "react";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
+import { FaArrowRightFromBracket } from "react-icons/fa6";
 import { MdOutlineWeb } from "react-icons/md";
 import Link from "next/link";
 
 const ProjectItem = ({ image, name, tech, hosted, link }) => {
   return (
     <div
-      className={` min-h-[200px] cursor-auto md:min-h-[350px] md:max-h-[500px] max-w-[100%] relative flex items-center justify-center group h-full w-full shadow-gray-400 rounded-xl hover:bg-gradient-to-b hover:scale-105 from-gray-700 to-[#14131a] ease-in-out duration-700`}
+      className={`min-h-[200px] cursor-auto md:min-h-[350px] md:max-h-[500px] relative flex items-center justify-center group h-full w-full shadow-gray-400 rounded-xl hover:bg-gradient-to-b hover:scale-105 from-gray-700 to-[#14131a] ease-in-out duration-700`}
     >
       <Image
         className="w-full h-full rounded-xl group-hover:opacity-[0.1] object-cover transition-all duration-700 "
-        src={image}
+        src={image[0]}
         alt="/"
         width={100}
         height={100}
@@ -51,16 +52,15 @@ const ProjectItem = ({ image, name, tech, hosted, link }) => {
               <p>Code</p>
             </a>
           </div>
-          {/* <Link
-            href={`/projects/${name}`}
-            target="_blank"
-            className="flex gap-1 md:gap-2 hover:scale-110 duration-200 transition-all ease-in-out items-center justify-between bg-black hover:bg-white cursor-pointer hover:text-black font-semibold text-white p-2 md:px-5 rounded-lg"
-          >
-            <FaGithub className="w-8 h-8" />
-            <p>Demo</p>
-          </Link> */}
         </div>
       </div>
+      <Link
+        href={`/projects/${name}`}
+        target="_blank"
+        className="absolute top-3 right-3 hidden group-hover:flex hover:scale-110 duration-200 transition-all ease-in-out items-center justify-between bg-black hover:bg-white cursor-pointer hover:text-black font-semibold text-white px-3 py-1 rounded-lg"
+      >
+        <FaArrowRightFromBracket className="w-5 h-5" />
+      </Link>
     </div>
   );
 };

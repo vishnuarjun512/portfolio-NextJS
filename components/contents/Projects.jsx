@@ -53,23 +53,19 @@ const Projects = () => {
             );
           })}
         </div>
-        <div className="bg-blue-400 rounded-lg p-5 max-h-[480px] md:max-h-[680px] min-h-[220px] md:min-h-[410px] overflow-auto transition-all duration-200 ease-in-out">
-          <div
-            className={`bg-blue-400 rounded-lg w-full h-full  grid md:grid-cols-2 place-items-center content-start gap-5 overflow-auto transition-all ease-in-out `}
-          >
-            {displayingProjects?.map((p, index) => {
-              return (
-                <ProjectItem
-                  key={index}
-                  image={p.image}
-                  name={p.name}
-                  link={p.link}
-                  tech={p.tech}
-                  hosted={p.hosted}
-                />
-              );
-            })}
-          </div>
+        <div className="bg-blue-400 rounded-lg p-5 max-h-[480px] grid md:grid-cols-2 place-items-center place-content-center content-start gap-5 md:max-h-[680px]  overflow-auto transition-all duration-200 ease-in-out">
+          {displayingProjects?.map((p, index) => {
+            return (
+              <ProjectItem
+                key={index}
+                image={p.image}
+                name={p.name}
+                link={p.link}
+                tech={p.tech}
+                hosted={p.hosted}
+              />
+            );
+          })}
         </div>
       </div>
     </div>

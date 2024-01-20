@@ -1,5 +1,5 @@
 import React from "react";
-import star from "@/public/Icons/star.png";
+import star from "../../public/Icons/star.png";
 
 import Image from "next/image";
 
