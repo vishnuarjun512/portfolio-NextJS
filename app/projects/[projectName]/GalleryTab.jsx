@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const GalleryTab = ({ image }) => {
   return (
-    <Tab className="relative flex h-[120px] cursor-pointer items-center justify-center rounded-md bg-white">
+    <Tab className="relative flex h-[60px] sm:h-[120px] cursor-pointer items-center justify-center rounded-md bg-white">
       {({ selected }) => (
         <div>
           <span className="absolute inset-0 overflow-hidden rounded-md">

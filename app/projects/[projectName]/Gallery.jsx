@@ -7,7 +7,7 @@ import Image from "next/image";
 const Gallery = ({ images }) => {
   return (
     <Tab.Group as="div" className="flex flex-col-reverse">
-      <div className="mx-auto mt-6 hidden w-full max-w-2xl sm:block lg:max-w-none">
+      <div className="mx-auto mt-6 w-full max-w-2xl block lg:max-w-none">
         <Tab.List className={`grid grid-cols-5 gap-4`}>
           {images.map((image, index) => (
             <GalleryTab key={index} image={image} />
@@ -17,7 +17,7 @@ const Gallery = ({ images }) => {
       <Tab.Panels className="">
         {images.map((image, index) => (
           <Tab.Panel key={index}>
-            <div className="aspect-square relative h-[520px] w-full overflow-hidden sm:rounded-lg">
+            <div className="aspect-square relative h-[250px] sm:h-[520px] w-full overflow-hidden sm:rounded-lg">
               <Image
                 fill
                 src={image}
