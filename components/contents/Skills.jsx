@@ -26,7 +26,7 @@ const Skills = () => {
       { name: "HTML", source: Html, level: 4 },
       { name: "CSS", source: css, level: 4 },
       { name: "JavaScript", source: js, level: 3 },
-      { name: "React", source: react, level: 2 },
+      { name: "React", source: react, level: 4 },
       { name: "SASS", source: sass, level: 3 },
       { name: "Tailwind", source: tailwind, level: 4 },
     ],
@@ -38,14 +38,14 @@ const Skills = () => {
       items: [
         { name: "PHP", source: php, level: 3 },
         { name: "Node.js", source: node, level: 3 },
-        { name: "Express.js", source: express, level: 3 },
+        { name: "Express.js", source: express, level: 4 },
       ],
     },
     {
       title: "Database",
       items: [
         { name: "SQL", source: sql, level: 3 },
-        { name: "MongoDB", source: mongodb, level: 3 },
+        { name: "MongoDB", source: mongodb, level: 4 },
       ],
     },
     {

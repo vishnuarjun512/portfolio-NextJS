@@ -59,7 +59,7 @@ const ProjectItem = ({ image, name, tech, hosted, link }) => {
         target="_blank"
         className="absolute top-3 right-3 hidden group-hover:flex hover:scale-110 duration-200 transition-all ease-in-out items-center justify-between bg-black hover:bg-white cursor-pointer hover:text-black font-semibold text-white px-3 py-1 rounded-lg"
       >
-        <FaArrowRightFromBracket className="w-5 h-5" />
+        <FaArrowRightFromBracket className="w-3 h-3 sm:w-5 sm:h-5" />
       </Link>
     </div>
   );
