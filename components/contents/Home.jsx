@@ -8,6 +8,7 @@ import {
   FaGithub,
   FaTwitterSquare,
 } from "react-icons/fa";
+
 const Home = () => {
   function openPdfWindow(pdfUrl) {
     const newWindow = window.open("", "_blank");
@@ -30,8 +31,13 @@ const Home = () => {
     >
       <div className="w-[100vw] h-screen absolute top-0 left-0 right-0 bottom-0 bg-black/30 z-[1]" />
       <div className="flex flex-col justify-center items-center z-[2] text-white">
-        <h1 className="text-4xl md:text-6xl font-bold p-4">I'm Vishnu V V</h1>
-        <h2 className="flex font-semibold md:text-3xl text-2xl p-4">
+        <h1 className="text-4xl md:text-6xl font-bold p-4" data-aos="flip-left">
+          I'm Vishnu V V
+        </h1>
+        <h2
+          data-aos="flip-right"
+          className="flex font-semibold md:text-3xl text-2xl p-4"
+        >
           I'm a
           <TypeAnimation
             sequence={[
@@ -54,6 +60,7 @@ const Home = () => {
         </h2>
         <div className="flex gap-3 items-center p-4 hover:scale-105 duration-200 ease-in-out transition-all">
           <a
+            data-aos="zoom-in"
             href="https://www.instagram.com/vishnu_arjun_/"
             target="_blank"
             rel="noopener noreferrer"
@@ -61,6 +68,7 @@ const Home = () => {
             <FaInstagram className="md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
           </a>
           <a
+            data-aos="zoom-in"
             href="https://github.com/vishnuarjun512"
             target="_blank"
             rel="noopener noreferrer"
@@ -68,6 +76,7 @@ const Home = () => {
             <FaGithub className=" md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
           </a>
           <a
+            data-aos="zoom-in"
             href="https://www.linkedin.com/in/vishnuarjun512/"
             target="_blank"
             rel="noopener noreferrer"
@@ -75,6 +84,7 @@ const Home = () => {
             <FaLinkedin className=" md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
           </a>
           <a
+            data-aos="zoom-in"
             href="https://www.facebook.com/profile.php?id=100010680883981"
             target="_blank"
             rel="noopener noreferrer"
@@ -82,6 +92,7 @@ const Home = () => {
             <FaFacebook className=" md:w-16 md:h-16 w-12 h-12 border p-1 rounded-full shadow-lg hover:scale-110 duration-200 transition-all ease-in-out" />
           </a>
           <a
+            data-aos="zoom-in"
             href="https://twitter.com/VishnuArjun12"
             target="_blank"
             rel="noopener noreferrer"

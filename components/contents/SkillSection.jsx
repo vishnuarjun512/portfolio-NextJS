@@ -21,6 +21,7 @@ const SkillSection = ({ title, items }) => {
 
   return (
     <div
+      data-aos="fade-up"
       className={`bg-[#363062]  border-1 min-h-[170px] min-w-[350px] p-2 items-center justify-evenly flex flex-col rounded-3xl shadow-2xl ease-in-out duration-100`}
     >
       <h1 className="text-[#D8D9DA] sm:text-2xl p-2 text-2xl font-semibold underline">
@@ -30,6 +31,9 @@ const SkillSection = ({ title, items }) => {
         {items.map((item, index) => (
           <div
             key={index}
+            data-aos="zoom-in"
+            data-aos-easing="linear"
+            data-aos-duration="600"
             className="flex flex-col items-center justify-center p-2 ease-in-out duration-100"
           >
             <div className="relative group/item">

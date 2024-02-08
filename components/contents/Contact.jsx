@@ -12,14 +12,19 @@ const Contact = () => {
         method="post"
         encType="multipart/form-data"
         className={`w-[95%] md:w-[70%] p-3 rounded-xl`}
+        data-aos="fade-up"
       >
         <h1
+          data-aos="fade-up"
           className={`text-[#001b5e] text-4xl mb-5 font-bold text-center whitespace-nowrap `}
         >
           Contact Me
         </h1>
-        <div className="grid md:grid-cols-2 gap-4 w-full py-2">
-          <div className="flex flex-col">
+        <div
+          data-aos="fade-up"
+          className="grid md:grid-cols-2 gap-4 w-full py-2"
+        >
+          <div data-aos="fade-up" className="flex flex-col">
             <label className={`uppercase text-sm py-2"`} htmlFor="name">
               Name
             </label>
@@ -31,7 +36,7 @@ const Contact = () => {
               autoComplete="name"
             />
           </div>
-          <div className="flex flex-col">
+          <div data-aos="fade-up" className="flex flex-col">
             <label className={`uppercase text-sm py-2"`} htmlFor="mobile">
               Phone Number
             </label>
@@ -43,7 +48,7 @@ const Contact = () => {
               autoComplete="mobile"
             />
           </div>
-          <div className="flex flex-col">
+          <div data-aos="fade-up" className="flex flex-col">
             <label className={`uppercase text-sm py-2"`} htmlFor="email">
               Email
             </label>
@@ -55,13 +60,8 @@ const Contact = () => {
               autoComplete="email"
             />
           </div>
-          <div className="flex flex-col">
-            <label
-              className={`${
-                isDarkMode ? "text-white" : ""
-              } uppercase text-sm py-2"`}
-              htmlFor="subject"
-            >
+          <div data-aos="fade-up" className="flex flex-col">
+            <label className={`uppercase text-sm py-2"`} htmlFor="subject">
               Subject
             </label>
             <input
@@ -72,13 +72,11 @@ const Contact = () => {
               autoComplete="subject"
             />
           </div>
-          <div className="w-full flex flex-col col-span-1 md:col-span-2 py-2">
-            <label
-              className={`${
-                isDarkMode ? "text-white" : ""
-              } uppercase text-sm py-2"`}
-              htmlFor="message"
-            >
+          <div
+            data-aos="fade-up"
+            className="w-full flex flex-col col-span-1 md:col-span-2 py-2"
+          >
+            <label className={`uppercase text-sm py-2"`} htmlFor="message">
               Message
             </label>
             <textarea
@@ -91,9 +89,7 @@ const Contact = () => {
           </div>
         </div>
         <button
-          className={`${
-            isDarkMode ? "bg-[#3d3d3d]" : "bg-[#001b5e]"
-          }  text-gray-200 mt-4 w-full p-4 rounded-lg cursor-pointer hover:scale-110 ease-in duration-200`}
+          className={`bg-[#001b5e] text-gray-200 mt-4 w-full p-4 rounded-lg cursor-pointer hover:scale-110 ease-in duration-200`}
         >
           Send Message
         </button>

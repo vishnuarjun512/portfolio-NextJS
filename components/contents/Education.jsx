@@ -23,7 +23,10 @@ const Education = () => {
     },
   ];
   return (
-    <div className="px-5 flex flex-col justify-center items-center">
+    <div
+      data-aos="fade-right"
+      className="px-5 flex flex-col justify-center items-center"
+    >
       <h1 className={`text-[#001b5e] text-4xl font-bold text-center `}>
         Education
       </h1>

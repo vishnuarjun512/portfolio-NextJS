@@ -22,6 +22,7 @@ const Work = () => {
   return (
     <div
       id="work"
+      data-aos="fade-left"
       className="flex flex-col justify-center items-center max-w-[1540px] px-5"
     >
       <h1 className={`text-[#001b5e] text-4xl font-bold text-center`}>Work</h1>

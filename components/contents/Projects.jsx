@@ -32,8 +32,13 @@ const Projects = () => {
       id="projects"
       className="min-h-full bg-green-200 w-full flex flex-col items-center justify-start py-10"
     >
-      <h1 className="text-4xl font-bold text-center my-5 ">My Projects</h1>
-      <div className="bg-blue-300 flex flex-col gap-5 p-3 max-w-[90%] md:max-w-[85%]">
+      <h1 data-aos="fade-up" className="text-4xl font-bold text-center my-5 ">
+        My Projects
+      </h1>
+      <div
+        data-aos="fade-up"
+        className="bg-blue-300 flex flex-col gap-5 p-3 max-w-[90%] md:max-w-[85%]"
+      >
         <div className="grid grid-flow-col place-content-between sm:place-content-around gap-1 md:gap-1 lg:gap-3">
           {uniqueCategories.map((c, index) => {
             return (
@@ -58,6 +63,7 @@ const Projects = () => {
             return (
               <ProjectItem
                 key={index}
+                index={index}
                 image={p.image}
                 name={p.name}
                 link={p.link}

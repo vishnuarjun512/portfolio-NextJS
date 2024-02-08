@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Html from "../../public/Icons/html.png";
 import css from "../../public/Icons/css.png";
@@ -88,6 +89,7 @@ const Skills = () => {
       <h1 className={`text-black text-4xl font-bold text-center`}>Skills</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center content-center gap-8 m-5 px-10">
         <div
+          data-aos="fade-up"
           className={`bg-[#363062] md:row-span-2 border-1 min-h-[400px] min-w-[350px] p-2 items-center justify-evenly flex flex-col rounded-3xl shadow-2xl ease-in-out duration-100`}
         >
           <h1 className="text-[#D8D9DA] sm:text-2xl p-2 text-2xl font-semibold underline">
@@ -97,6 +99,9 @@ const Skills = () => {
             {frontend.items.map((item, index) => (
               <div
                 key={index}
+                data-aos="zoom-in"
+                data-aos-easing="linear"
+                data-aos-duration="600"
                 className="flex flex-col items-center justify-center p-2 ease-in-out duration-100"
               >
                 <div className="relative group/item">
