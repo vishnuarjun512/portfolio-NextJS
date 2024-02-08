@@ -11,7 +11,12 @@ import "aos/dist/aos.css";
 
 const Main = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      offset: 20,
+      duration: 400,
+      easing: "ease-in-sine",
+      delay: 50,
+    });
   }, []);
   return (
     <div className="max-h-screen">

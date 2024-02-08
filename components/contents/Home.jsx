@@ -102,6 +102,7 @@ const Home = () => {
         </div>
       </div>
       <div
+        data-aos="zoom-in"
         className={`shadow-gray-500 bg-gray-200 hover:bg-gray-100 text-black absolute right-2 bottom-2 z-20 rounded-full md:rounded-2xl shadow-sm sm:mx-2 mr-[-4px] sm:my-1 my-1 p-1 md:py-2 cursor-pointer group hover:scale-[1.2] ease-in duration-100 `}
       >
         <button
