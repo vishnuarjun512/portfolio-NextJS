@@ -15,12 +15,12 @@ const Education = () => {
       college: "KLE's RLS Insitute of BCA",
       details: "Specialized with Cloud Computing",
     },
-    {
-      year: "2016 - 2018",
-      title: "PUC",
-      college: "Bangur Nagar Junior College",
-      details: "Science - PCMC",
-    },
+    // {
+    //   year: "2016 - 2018",
+    //   title: "PUC",
+    //   college: "Bangur Nagar Junior College",
+    //   details: "Science - PCMC",
+    // },
   ];
   return (
     <div

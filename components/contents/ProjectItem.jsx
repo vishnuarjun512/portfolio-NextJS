@@ -8,7 +8,6 @@ import Link from "next/link";
 const ProjectItem = ({ index, image, name, tech, hosted, link }) => {
   return (
     <div
-      data-aos={`fade-${index % 2 != 0 ? "left" : "right"}`}
       className={`min-h-[200px] cursor-auto md:min-h-[350px] md:max-h-[500px] relative flex items-center justify-center group h-full w-full shadow-gray-400 rounded-xl hover:bg-gradient-to-b hover:scale-105 from-gray-700 to-[#14131a] ease-in-out duration-700`}
     >
       <Image
