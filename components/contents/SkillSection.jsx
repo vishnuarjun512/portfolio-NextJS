@@ -22,7 +22,7 @@ const SkillSection = ({ title, items }) => {
   return (
     <div
       data-aos="fade-up"
-      className={`bg-[#363062]  border-1 min-h-[170px] min-w-[350px] p-2 items-center justify-evenly flex flex-col rounded-3xl shadow-2xl ease-in-out duration-100`}
+      className={`bg-slate-800  border-1 min-h-[170px] min-w-[350px] p-2 items-center justify-evenly flex flex-col rounded-3xl shadow-2xl ease-in-out duration-100`}
     >
       <h1 className="text-[#D8D9DA] sm:text-2xl p-2 text-2xl font-semibold underline">
         {title.toUpperCase()}
@@ -43,7 +43,7 @@ const SkillSection = ({ title, items }) => {
                 alt={item.name}
               />
               <div
-                className={`bg-[#363062] group-hover/item:translate-y-1 -translate-y-2 flex-col items-center justify-center text-bold text-[15px] text-center transition-all opacity-0 group-hover/item:opacity-100 duration-150`}
+                className={`bg-slate-800 group-hover/item:translate-y-1 -translate-y-2 flex-col items-center justify-center text-bold text-[15px] text-center transition-all opacity-0 group-hover/item:opacity-100 duration-150`}
               >
                 <p className="text-[#F0F0F0]">{item.name}</p>
                 <div className="flex justify-center">

@@ -10,14 +10,16 @@ const EducationItem = ({ year, title, college, details }) => {
             <span className=" inline-block px-2 py-1 font-semibold text-white bg-[#00b15e] rounded-md">
               {year}
             </span>
-            <span className={`text-[#001b5e] text-lg font-semibold`}>
+            <span className={`text-blue-500 text-lg font-semibold`}>
               {title}
             </span>
           </p>
-          <span className={`text-black my-2 text-3xl font-bold leading-none `}>
+          <span
+            className={`text-slate-200 my-2 text-3xl font-bold leading-none `}
+          >
             {college}
           </span>
-          <p className="my-0 text-base font-normal text-gray-500">{details}</p>
+          <p className="my-0 text-base font-normal text-slate-500">{details}</p>
         </li>
       </ol>
     </div>
