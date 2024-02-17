@@ -5,6 +5,7 @@
 html{
   scroll-behavior: smooth;
   overflow: unset;
+  /* scroll-snap-type: y mandatory; */
 }
 
 .bg-custom{
