@@ -1,12 +1,14 @@
 import React from "react";
+import { Lamp } from "../ui/Lamp";
 
 const Contact = () => {
   const isDarkMode = false;
   return (
     <div
       id="contact"
-      className="flex flex-col items-center justify-center py-10 min-h-full min-w-full bg-orange-300"
+      className="flex flex-col items-center justify-center min-h-full min-w-full bg-slate-950"
     >
+      <Lamp title="Contact Me" size />
       <form
         action="https://getform.io/f/6c5d4a0a-3945-4e2b-89cf-cc52412ab93a"
         method="post"
@@ -14,18 +16,15 @@ const Contact = () => {
         className={`w-[95%] md:w-[70%] p-3 rounded-xl`}
         data-aos="fade-up"
       >
-        <h1
-          data-aos="fade-up"
-          className={`text-[#001b5e] text-4xl mb-5 font-bold text-center whitespace-nowrap `}
-        >
-          Contact Me
-        </h1>
         <div
           data-aos="fade-up"
           className="grid md:grid-cols-2 gap-4 w-full py-2"
         >
           <div data-aos="fade-up" className="flex flex-col">
-            <label className={`uppercase text-sm py-2"`} htmlFor="name">
+            <label
+              className={`uppercase text-sm py-2 text-white z-2"`}
+              htmlFor="name"
+            >
               Name
             </label>
             <input
@@ -37,7 +36,10 @@ const Contact = () => {
             />
           </div>
           <div data-aos="fade-up" className="flex flex-col">
-            <label className={`uppercase text-sm py-2"`} htmlFor="mobile">
+            <label
+              className={`uppercase text-sm py-2 text-white z-2"`}
+              htmlFor="mobile"
+            >
               Phone Number
             </label>
             <input
@@ -49,7 +51,10 @@ const Contact = () => {
             />
           </div>
           <div data-aos="fade-up" className="flex flex-col">
-            <label className={`uppercase text-sm py-2"`} htmlFor="email">
+            <label
+              className={`uppercase text-sm py-2 text-white z-2"`}
+              htmlFor="email"
+            >
               Email
             </label>
             <input
@@ -61,7 +66,10 @@ const Contact = () => {
             />
           </div>
           <div data-aos="fade-up" className="flex flex-col">
-            <label className={`uppercase text-sm py-2"`} htmlFor="subject">
+            <label
+              className={`uppercase text-sm py-2 text-white z-2"`}
+              htmlFor="subject"
+            >
               Subject
             </label>
             <input
@@ -76,7 +84,10 @@ const Contact = () => {
             data-aos="fade-up"
             className="w-full flex flex-col col-span-1 md:col-span-2 py-2"
           >
-            <label className={`uppercase text-sm py-2"`} htmlFor="message">
+            <label
+              className={`uppercase text-sm py-2 text-white z-2"`}
+              htmlFor="message"
+            >
               Message
             </label>
             <textarea

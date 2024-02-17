@@ -6,7 +6,7 @@ const Resume = () => {
   return (
     <div
       id="resume"
-      className="flex flex-col md:flex-row justify-center items-center md:items-start gap-20 bg-[#9BB8CD]  py-10 md:py-20"
+      className="flex flex-col md:flex-row justify-center items-center md:items-start md:gap-[100px] lg:gap-[160px] bg-slate-950  py-10 md:py-20"
     >
       <Education />
       <Work />

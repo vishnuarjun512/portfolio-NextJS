@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import ProjectItem from "./ProjectItem";
 import data from "../data/data.json";
+import { Tabs } from "../ui/Tabs";
+import { Lamp } from "../ui/Lamp";
 
 const projects = data.projectData;
 
 const uniqueCategories = [
-  "All",
+  // "All",
   ...new Set(projects.map((project) => project.category)),
 ];
 
@@ -27,15 +29,53 @@ const Projects = () => {
     setProjects();
   }, [category]);
 
+  let tabs = uniqueCategories.map((c) => {
+    return {
+      title: (
+        <h1
+          className={` text-white w-full text-[12px] sm:text-xl cursor-pointer lg:text-3xl md:text-2xl text-center whitespace-nowrap font-semibold transition-all duration-200 ease-in-out rounded-lg`}
+        >
+          {c}
+        </h1>
+      ),
+      value: c,
+      content: (
+        <div className="bg-slate-800 grid md:grid-cols-2 gap-4 p-3 max-h-[500px] overflow-y-auto ">
+          {projects
+            .filter((p) => p.category == c)
+            .map((p) => (
+              <ProjectItem
+                key={p.name}
+                image={p.image}
+                name={p.name}
+                link={p.link}
+                tech={p.tech}
+                hosted={p.hosted}
+              />
+            ))}
+        </div>
+      ),
+    };
+  });
+
+  // tabs[0].content = projects.map((p) => (
+  //   <ProjectItem
+  //     key={p.name}
+  //     image={p.image}
+  //     name={p.name}
+  //     link={p.link}
+  //     tech={p.tech}
+  //     hosted={p.hosted}
+  //   />
+  // ));
+
   return (
     <div
       id="projects"
-      className="min-h-full bg-green-200 w-full flex flex-col items-center justify-start py-10"
+      className="min-h-[900px] bg-slate-950 w-full flex flex-col items-center justify-start"
     >
-      <h1 data-aos="fade-up" className="text-4xl font-bold text-center my-5 ">
-        My Projects
-      </h1>
-      <div
+      <Lamp title="My Projects" size />
+      {/* <div
         data-aos="fade-up"
         className="bg-blue-300 flex flex-col gap-5 p-3 max-w-[90%] md:max-w-[85%]"
       >
@@ -73,6 +113,14 @@ const Projects = () => {
             );
           })}
         </div>
+      </div> */}
+      <div className="my-10 mx-12 p-3 flex flex-col justify-center items-center">
+        <Tabs
+          tabs={tabs}
+          contentClassName="max-h-[600px]"
+          containerClassName="bg-slate-900 rounded-2xl px-5 sm:px-[50px] lg:px-[100px] xl:px-[250px] py-5 gap-3"
+          activeTabClassName="bg-blue-400 rounded-xl"
+        />
       </div>
     </div>
   );

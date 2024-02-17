@@ -19,6 +19,7 @@ import Python from "../../public/Icons/python.png";
 import git from "../../public/Icons/git.png";
 import github from "../../public/Icons/github.png";
 import SkillSection from "./SkillSection";
+import { Lamp } from "../ui/Lamp";
 
 const Skills = () => {
   const frontend = {
@@ -84,9 +85,9 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className={`bg-[#DF826C] min-h-[75vh] m-auto py-10 px-[65px] md:px-[80px] flex flex-col justify-center items-center`}
+      className={`bg-slate-950 min-h-[75vh] m-auto pb-10 flex flex-col justify-center items-center`}
     >
-      <h1 className={`text-black text-4xl font-bold text-center`}>Skills</h1>
+      <Lamp title="Skills" size />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center content-center gap-8 m-5 px-10">
         <div
           data-aos="fade-up"

@@ -1,5 +1,6 @@
 import React from "react";
 import EducationItem from "./EducationItem";
+import { Lamp } from "../ui/Lamp";
 
 const Education = () => {
   const data = [
@@ -25,11 +26,12 @@ const Education = () => {
   return (
     <div
       data-aos="fade-right"
-      className="px-5 flex flex-col justify-center items-center"
+      className="flex flex-col justify-center items-center"
     >
-      <h1 className={`text-[#001b5e] text-4xl font-bold text-center `}>
+      {/* <h1 className={`text-[#001b5e] text-4xl font-bold text-center `}>
         Education
-      </h1>
+      </h1> */}
+      <Lamp title="Education" />
 
       <div className="flex justify-center flex-col pt-[16px]">
         {data.map((item, idx) => (

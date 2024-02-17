@@ -1,5 +1,6 @@
 import React from "react";
 import WorkItem from "./WorkItem";
+import { Lamp } from "../ui/Lamp";
 
 const Work = () => {
   const data = [
@@ -23,9 +24,10 @@ const Work = () => {
     <div
       id="work"
       data-aos="fade-left"
-      className="flex flex-col justify-center items-center max-w-[1540px] px-5"
+      className="flex flex-col justify-center items-center max-w-[1540px]"
     >
-      <h1 className={`text-[#001b5e] text-4xl font-bold text-center`}>Work</h1>
+      {/* <h1 className={`text-[#001b5e] text-4xl font-bold text-center`}>Work</h1> */}
+      <Lamp title="Work" />
       <div className="flex justify-center flex-col pt-[16px]">
         {data.map((item, idx) => (
           <WorkItem
