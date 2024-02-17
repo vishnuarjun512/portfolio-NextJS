@@ -97,13 +97,13 @@ export const LampContainer = ({
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-cyan-400 "
+          className="absolute inset-auto z-50 h-2 rounded-full w-[30rem] -translate-y-[7rem] bg-cyan-400 "
         ></motion.div>
 
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-slate-950 "></div>
       </div>
 
-      <div className="relative z-50 flex -translate-y-[70px] md:-translate-y-[65px] flex-col items-center">
+      <div className="relative z-50 flex -translate-y-[70px] md:-translate-y-[70px] flex-col items-center">
         {children}
       </div>
     </div>
