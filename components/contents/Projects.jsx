@@ -67,6 +67,25 @@ const projects = [
     category: "Frontend",
   },
   {
+    name: "Social Media",
+    description: [
+      "This Backend Project is a collective set of RESTful API routes designed to facilitate the management of a Social Media App efficiently.",
+      "Developed a robust and scalable backend API using Node.js, Express.js, and MongoDB for a social media platform.",
+      "Implemented RESTful API endpoints to handle user authentication, post creation, following/follower functionality, and more.",
+      "Employed MongoDB as the NoSQL database to store user profiles, posts, and relationship data efficiently.",
+      "Implemented unit tests using Jest and Supertest to validate the functionality and behavior of API endpoints.",
+      "Created detailed documentation for API endpoints, request/response payloads, and error codes using tools like Swagger.",
+    ],
+    tech: ["ExpressJS", "Jest", "Supertest", "Swagger"],
+    link: "https://github.com/vishnuarjun512/Social-Media-Backend",
+    image: ["/socialMedia.png"],
+    hosted: {
+      yes: true,
+      link: "https://social-media-backend-2dqa.onrender.com/api-docs/",
+    },
+    category: "Backend",
+  },
+  {
     name: "Todo Web API",
     description: [
       "The Task Management API Backend is a collective set of API routes designed to facilitate the management of a TaskList App efficiently.",
@@ -75,7 +94,7 @@ const projects = [
       "The API supports tracking task completion statistics over different time intervals, facilitating maintenance and monitoring of task-related activities.",
       "The provided example requests and responses serve as comprehensive documentation made with POSTMAN, making it easy for developers to understand and utilize the API.",
     ],
-    tech: ["ExpressJS", "Postman", "Swagger"],
+    tech: ["ExpressJS", "Postman"],
     link: "https://github.com/vishnuarjun512/Task-Manager-API",
     image: ["/todo.png"],
     hosted: {

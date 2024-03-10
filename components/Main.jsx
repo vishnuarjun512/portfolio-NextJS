@@ -19,7 +19,7 @@ const Main = () => {
     });
   }, []);
   return (
-    <div className="max-h-screen">
+    <div className="max-h-screen max-w-[100%] bg-slate-950">
       <Nav />
       <Home />
       <Skills />
