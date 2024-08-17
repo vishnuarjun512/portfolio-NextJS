@@ -106,7 +106,7 @@ const Home = () => {
         className={`shadow-gray-500 bg-gray-200 hover:bg-gray-100 text-black absolute right-2 bottom-2 z-20 rounded-full md:rounded-2xl shadow-sm sm:mx-2 mr-[-4px] sm:my-1 my-1 p-1 md:py-2 cursor-pointer group hover:scale-[1.2] ease-in duration-100 `}
       >
         <button
-          onClick={() => openPdfWindow("/VISHNU.pdf")}
+          onClick={() => openPdfWindow("/VISHNU_RESUME.pdf")}
           className="sm:text-[13px] text-[9px]  font-bold  sm:h-[30px] h-[15px] sm:w-[100px] w-[60px] flex items-center justify-center"
         >
           My Resume

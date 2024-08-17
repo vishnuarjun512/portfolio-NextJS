@@ -5,11 +5,11 @@ import { Lamp } from "../ui/Lamp";
 const Work = () => {
   const data = [
     {
-      year: 2023,
-      title: "Freelancing Web Developer",
-      company: "Self-Independent",
+      year: "July 2024 - Nov 2024",
+      title: "Full Stack Developer",
+      company: "Acubiq",
       duration: "Present",
-      details: "Willing to build MERN Stack Web Apps",
+      details: "Integrating MERN Stacked Web Application",
     },
     // {
     //   year: 2023,
