@@ -19,7 +19,7 @@ export const Lamp: React.FC<LampProps> = ({ title, size }) => {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="bg-gradient-to-b from-slate-100 to-slate-500 font-bold bg-clip-text text-center text-3xl text-transparent md:text-4xl"
+        className="bg-gradient-to-b from-slate-100 to-slate-500 font-bold bg-clip-text text-center text-3xl text-transparent md:text-4xl mt-[70px] sm:mt-[60px] md:mt-[50px] lg:mt-[40px]"
       >
         {title}
       </motion.h1>

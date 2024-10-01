@@ -19,8 +19,8 @@ const Main = () => {
     });
   }, []);
   return (
-    <div className="max-h-screen max-w-[100%] bg-slate-950">
-      <Nav />
+    <div className="w-full bg-slate-950">
+      {/* <Nav /> */}
       <Home />
       <Skills />
       <Projects />
